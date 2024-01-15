@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Diagnostics.Metrics;
-using System.Net;
-using System.Runtime.Intrinsics.X86;
+using System.Globalization;
 
 class URI
 {
