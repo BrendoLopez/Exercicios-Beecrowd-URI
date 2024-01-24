@@ -1,0 +1,20 @@
+﻿
+int N = int.Parse(Console.ReadLine());
+
+string[] A = new string[3];
+
+for (int i = 0; i < N; i++)
+{
+    A = Console.ReadLine().Split(' ');
+    double testeA1 = double.Parse(A[0], CultureInfo.InvariantCulture);
+    double testeA2 = double.Parse(A[1], CultureInfo.InvariantCulture);
+    double testeA3 = double.Parse(A[2], CultureInfo.InvariantCulture);
+
+    double peso1 = 2;
+    double peso2 = 3;
+    double peso3 = 5;
+
+    double mediaPonderada = ((peso1 * testeA1) + (peso2 * testeA2) + (peso3 * testeA3)) / (peso1 + peso2 + peso3);
+
+    Console.WriteLine(mediaPonderada.ToString("F1", CultureInfo.InvariantCulture));
+}
