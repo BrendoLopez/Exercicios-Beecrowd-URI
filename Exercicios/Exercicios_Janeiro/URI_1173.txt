@@ -1,0 +1,20 @@
+int valor = int.Parse(Console.ReadLine());
+
+if (valor <= 50)
+{
+    int[] vetor = new int[10];
+    vetor[0] = valor;
+
+    for (int i = 1; i < vetor.Length; i++)
+    {
+        vetor[i] = valor * 2;
+        valor = vetor[i];
+    }
+
+    int contador = 0;
+    foreach (var item in vetor)
+    {
+        Console.WriteLine($"N[{contador}] = {item}");
+        contador++;
+    }
+}
